@@ -46,7 +46,7 @@ public class Sprint : MonoBehaviour
             float y = Input.GetAxisRaw("Vertical");
             Vector2 moveDir = x * transform.right + y * transform.up;
             moveDir.Normalize();
-            GetComponent<Rigidbody2D>().velocity = moveDir * moveSpeed / 8;
+            GetComponent<Rigidbody2D>().velocity = moveDir * moveSpeed / 16;
         }
         else
         {
@@ -55,6 +55,7 @@ public class Sprint : MonoBehaviour
             if (SprintTimer > 4)
             {
                 SprintTimer = 4;
+                exausted = false;
             }
             Vector3 mousePosition = Input.mousePosition;
             //mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);

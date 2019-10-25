@@ -26,7 +26,22 @@ public class PlayerHP : MonoBehaviour
                 SceneManager.LoadScene("gameover");
             }
         }
+        else if (collision.gameObject.tag == "health")
+        {
+            health = health + 1;
+            healthText.text = "HP: " + health;
+            HealthBar.value = health;
+            
+        }
     }
+    public void Update()
+    {
+        if (health > 6)
+        {
+            health = 6;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "EnemyBullet")
