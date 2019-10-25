@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerShoot : MonoBehaviour
 {
     public GameObject prefab;
-    public float shootSpeed = 10.0f;
-    public float bulletLifetime = 1.0f;
+    public float shootSpeed = 5.0f;
+    public float bulletLifetime = 1/5f;
     public float shootDelay = 1.0f;
     float timer = 0;
     // Start is called before the first frame update

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class EnemyHP : MonoBehaviour
 {
-    public int health = 2;
+    public int health = 10;
 
 
     void OnTriggerEnter2D(Collider2D collision)
