@@ -61,6 +61,7 @@ public class HotBar : MonoBehaviour
     {
         if (!inventory1)
         {
+
             Purple.SetActive(true);
             inventory1 = true;
             inventorycounter += 1;
