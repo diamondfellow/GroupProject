@@ -6,21 +6,21 @@ using UnityEngine.UI;
 public class PlayerHP : MonoBehaviour
 {
     public int health = 10;
-    public Text healthText;
-    public Slider HealthBar;
+    //public Text healthText;
+   // public Slider HealthBar;
     private void Start()
     {
-        healthText.text = "HP: " + health;
-        HealthBar.maxValue = health;
-        HealthBar.value = health;
+       // healthText.text = "HP: " + health;
+      //  HealthBar.maxValue = health;
+        //HealthBar.value = health;
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "enemy")
         {
             health = health - 1;
-            healthText.text = "HP: " + health;
-            HealthBar.value = health;
+           // healthText.text = "HP: " + health;
+        //    HealthBar.value = health;
             if (health < 1)
             {
                 SceneManager.LoadScene("gameover");
@@ -29,8 +29,8 @@ public class PlayerHP : MonoBehaviour
         else if (collision.gameObject.tag == "health")
         {
             health = health + 1;
-            healthText.text = "HP: " + health;
-            HealthBar.value = health;
+           // healthText.text = "HP: " + health;
+          //  HealthBar.value = health;
             
         }
     }
@@ -47,8 +47,8 @@ public class PlayerHP : MonoBehaviour
         if (collision.gameObject.tag == "EnemyBullet")
         {
             health = health - 1;
-            healthText.text = "HP: " + health;
-            HealthBar.value = health;
+          //  healthText.text = "HP: " + health;
+           // HealthBar.value = health;
             if (health < 1)
             {
                 SceneManager.LoadScene("gameover");
