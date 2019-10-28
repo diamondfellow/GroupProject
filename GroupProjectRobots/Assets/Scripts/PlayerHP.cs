@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class PlayerHP : MonoBehaviour
 {
-    public int health = 10;
+    public static int health = 6;
     public Text healthText;
     public Slider HealthBar;
     private void Start()
@@ -19,8 +19,8 @@ public class PlayerHP : MonoBehaviour
         if (collision.gameObject.tag == "enemy")
         {
             health = health - 1;
-            healthText.text = "HP: " + health;
-            HealthBar.value = health;
+            //healthText.text = "HP: " + health;
+            //HealthBar.value = health;
             if (health < 1)
             {
                 SceneManager.LoadScene("gameover");
@@ -54,5 +54,9 @@ public class PlayerHP : MonoBehaviour
                 SceneManager.LoadScene("gameover");
             }
         }
+    }
+    public void Bandage()
+    {
+        health = 6;
     }
 }

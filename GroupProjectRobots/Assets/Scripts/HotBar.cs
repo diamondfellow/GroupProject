@@ -26,15 +26,16 @@ public class HotBar : MonoBehaviour
     public bool inventory4 = false;
     public static bool inventoryfull = false;
     public int inventorycounter = 0;
-    public string inventoryitem1;
-    public string inventoryitem2;
-    public string inventoryitem3;
-    public string inventoryitem4;
+    public static string inventoryitem1;
+    public static string inventoryitem2;
+    public static string inventoryitem3;
+    public static string inventoryitem4;
     public Transform player;
     public GameObject yellow1;
     public GameObject blue1;
     public GameObject green1;
     public GameObject purple1;
+    public PlayerHP playerhp;
 
 
 
@@ -47,8 +48,24 @@ public class HotBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-   
-        if(inventorycounter == 4)
+        if (Input.GetKeyUp(KeyCode.Alpha1) && inventory1)
+        {
+            UseItem1();
+        }
+        if (Input.GetKeyUp(KeyCode.Alpha2) && inventory2)
+        {
+            UseItem2();
+        }
+        if (Input.GetKeyUp(KeyCode.Alpha3) && inventory3)
+        {
+            UseItem3();
+        }
+        if (Input.GetKeyUp(KeyCode.Alpha4) && inventory4)
+        {
+            UseItem4();
+        }
+
+        if (inventorycounter == 4)
         {
             inventoryfull = true;
         }
@@ -319,6 +336,25 @@ public class HotBar : MonoBehaviour
 
             }
         }
+    }
+    public void UseItem1()
+    {
+        if (inventoryitem1 == "bandage")
+        {
+           playerhp.Bandage();
+        } 
+    }
+    public void UseItem2()
+    {
+
+    }
+    public void UseItem3()
+    {
+
+    }
+    public void UseItem4()
+    {
+
     }
 }
 
