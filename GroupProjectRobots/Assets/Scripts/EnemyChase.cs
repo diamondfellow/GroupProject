@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chase : MonoBehaviour
+public class EnemyChase : MonoBehaviour
 {
     public Transform player;
     public float chaseSpeed = 2.0f;
@@ -41,7 +41,6 @@ public class Chase : MonoBehaviour
         Vector2 chaseDirection = new Vector2(player.position.x - transform.position.x, player.position.y - transform.position.y);
         chaseDirection.Normalize();
         GetComponent<Rigidbody2D>().velocity = chaseDirection * chaseSpeed;
-        transform.up = chaseDirection;
     }
     void GoHome()
     {
@@ -50,13 +49,11 @@ public class Chase : MonoBehaviour
         {
             transform.position = startPosition;
             home = true;
-            transform.up = homeDirection;
         }
         else
         {
             homeDirection.Normalize();
             GetComponent<Rigidbody2D>().velocity = homeDirection * paceSpeed;
-            transform.up = homeDirection;
         }
     }
     void Pace()
@@ -68,6 +65,5 @@ public class Chase : MonoBehaviour
         }
         paceDirection.Normalize();
         GetComponent<Rigidbody2D>().velocity = paceDirection * paceSpeed;
-        transform.up = paceDirection;
     }
 }
