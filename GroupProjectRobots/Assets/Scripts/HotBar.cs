@@ -35,7 +35,7 @@ public class HotBar : MonoBehaviour
     public GameObject blue1;
     public GameObject green1;
     public GameObject purple1;
-    public PlayerHP playerhp;
+    
 
 
 
@@ -341,7 +341,7 @@ public class HotBar : MonoBehaviour
     {
         if (inventoryitem1 == "bandage")
         {
-           playerhp.Bandage();
+            PlayerHP.health = 6;
         } 
     }
     public void UseItem2()

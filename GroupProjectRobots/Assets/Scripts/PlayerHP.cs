@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class PlayerHP : MonoBehaviour
 {
-    public int health = 6;
+    public static int health = 6;
     
     void OnCollisionEnter2D(Collision2D collision)
     {
