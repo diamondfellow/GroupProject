@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class EnemyHP : MonoBehaviour
 {
     public int health = 10;
-
+    public static int damage = 1;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "bullet")
         {
-            health = health - 1;
+            health -= damage; 
 
             if (health < 1)
             {
@@ -20,4 +20,5 @@ public class EnemyHP : MonoBehaviour
             }
         }
     }
+    //void
 }

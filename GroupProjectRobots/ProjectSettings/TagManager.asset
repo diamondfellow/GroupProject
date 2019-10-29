@@ -10,6 +10,9 @@ TagManager:
   - Blue
   - bullet
   - enemy
+  - Crowbar
+  - metalPipe
+  - robotArm
   layers:
   - Default
   - TransparentFX

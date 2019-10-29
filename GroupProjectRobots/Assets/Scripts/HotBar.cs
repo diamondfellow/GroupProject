@@ -202,7 +202,7 @@ public class HotBar : MonoBehaviour
     }
     public void Hotbar1()
     {
-        if(inventoryitem1 == "purple")
+        if(inventoryitem1 == "purple" && inventory1)
         {
             Purple.SetActive(false);
             inventory1 = false;
@@ -210,21 +210,21 @@ public class HotBar : MonoBehaviour
             Instantiate(purple1, player.position, player.rotation);
 
         }
-        else if(inventoryitem1 == "blue")
+        else if(inventoryitem1 == "blue" && inventory1)
         {
             Blue.SetActive(false);
             inventory1 = false;
             inventorycounter -= 1;
             Instantiate(blue1, player.position, player.rotation);
         }
-        else if (inventoryitem1 == "yellow")
+        else if (inventoryitem1 == "yellow" && inventory1)
         {
             Yellow.SetActive(false);
             inventory1 = false;
             inventorycounter -= 1;
             Instantiate(yellow1, player.position, player.rotation);
         }
-        else if (inventoryitem1 == "green")
+        else if (inventoryitem1 == "green" && inventory1)
         {
             Green.SetActive(false);
             inventory1 = false;
@@ -235,14 +235,14 @@ public class HotBar : MonoBehaviour
     public void Hotbar2()
     {
         {
-            if (inventoryitem2 == "purple")
+            if (inventoryitem2 == "purple" && inventory2)
             {
                 Purple1.SetActive(false);
                 inventory2 = false;
                 inventorycounter -= 1;
                 Instantiate(purple1, player.position, player.rotation);
             }
-            else if (inventoryitem2 == "blue")
+            else if (inventoryitem2 == "blue" && inventory2)
             {
                 Blue1.SetActive(false);
                 inventory2 = false;
@@ -250,14 +250,14 @@ public class HotBar : MonoBehaviour
                 Instantiate(blue1, player.position, player.rotation);
 
             }
-            else if (inventoryitem2 == "yellow")
+            else if (inventoryitem2 == "yellow" && inventory2)
             {
                 Yellow1.SetActive(false);
                 inventory2 = false;
                 inventorycounter -= 1;
                 Instantiate(yellow1, player.position, player.rotation);
             }
-            else if (inventoryitem2 == "green")
+            else if (inventoryitem2 == "green" && inventory2)
             {
                 Green1.SetActive(false);
                 inventory2 = false;
@@ -269,14 +269,14 @@ public class HotBar : MonoBehaviour
     public void Hotbar3()
     {
             {
-                if (inventoryitem3 == "purple")
+                if (inventoryitem3 == "purple" && inventory3)
                 {
                     Purple2.SetActive(false);
                     inventory3 = false;
                     inventorycounter -= 1;
                     Instantiate(purple1, player.position, player.rotation);
                 }
-                else if (inventoryitem3 == "blue")
+                else if (inventoryitem3 == "blue" && inventory3)
                 {
                     Blue2.SetActive(false);
                     inventory3 = false;
@@ -284,14 +284,14 @@ public class HotBar : MonoBehaviour
                     Instantiate(blue1, player.position, player.rotation);
 
                 }
-                else if (inventoryitem3 == "yellow")
+                else if (inventoryitem3 == "yellow" && inventory3)
                 {
                     Yellow2.SetActive(false);
                     inventory3 = false;
                     inventorycounter -= 1;
                     Instantiate(yellow1, player.position, player.rotation);
                 }
-                else if (inventoryitem3 == "green")
+                else if (inventoryitem3 == "green" && inventory3)
                 {
                     Green2.SetActive(false);
                     inventory3 = false;
@@ -303,7 +303,7 @@ public class HotBar : MonoBehaviour
     public void Hotbar4()
     {
         {
-            if (inventoryitem4 == "purple")
+            if (inventoryitem4 == "purple" && inventory4)
             {
                 Purple3.SetActive(false);
                 inventory4 = false;
@@ -311,21 +311,21 @@ public class HotBar : MonoBehaviour
                 Instantiate(purple1, player.position, player.rotation);
 
             }
-            else if (inventoryitem4 == "blue")
+            else if (inventoryitem4 == "blue" && inventory4)
             {
                 Blue3.SetActive(false);
                 inventory4 = false;
                 inventorycounter -= 1;
                 Instantiate(blue1, player.position, player.rotation);
             }
-            else if (inventoryitem4 == "yellow")
+            else if (inventoryitem4 == "yellow" && inventory4)
             {
                 Yellow3.SetActive(false);
                 inventory4 = false;
                 inventorycounter -= 1;
                 Instantiate(yellow1, player.position, player.rotation);
             }
-            else if (inventoryitem4 == "green")
+            else if (inventoryitem4 == "green" && inventory4)
             {
                 Green3.SetActive(false);
                 inventory4 = false;
