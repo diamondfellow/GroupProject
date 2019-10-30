@@ -1,0 +1,1 @@
+okay so for some reason it thinks the walk down animation is 128x128 but the rest are 64x64
