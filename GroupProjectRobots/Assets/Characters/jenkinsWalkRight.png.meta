@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 59eaf839078da6248a6bc2983d8a5a1c
+guid: 411af22d257a985448e788632d126a9d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9172399223852221838
-    second: jenkinsWalkDown_0
+      213: 731710703056317952
+    second: jenkinsWalkRight_0
   - first:
-      213: 3639792628784520992
-    second: jenkinsWalkDown_1
+      213: -3245081030107413625
+    second: jenkinsWalkRight_1
   - first:
-      213: -8117419898709015218
-    second: jenkinsWalkDown_2
+      213: -8779379876696129899
+    second: jenkinsWalkRight_2
   - first:
-      213: 3499503447154619739
-    second: jenkinsWalkDown_3
+      213: -2100611751242397417
+    second: jenkinsWalkRight_3
   - first:
-      213: 1743917591059482837
-    second: jenkinsWalkDown_4
+      213: 7739352242355137435
+    second: jenkinsWalkRight_4
   - first:
-      213: 2020289595567114718
-    second: jenkinsWalkDown_5
+      213: 6130233306640726105
+    second: jenkinsWalkRight_5
   - first:
-      213: -2506988028345926642
-    second: jenkinsWalkDown_6
+      213: -8146969854157916927
+    second: jenkinsWalkRight_6
   - first:
-      213: -6130511102882960335
-    second: jenkinsWalkDown_7
+      213: -6010118321548156757
+    second: jenkinsWalkRight_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jenkinsWalkDown_0
+      name: jenkinsWalkRight_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1cb2cb07eabda242a6fff71499a611c
-      internalID: 9172399223852221838
+      spriteID: 6a74d8fa6c6bdd843a5ba686c651d81a
+      internalID: 731710703056317952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jenkinsWalkDown_1
+      name: jenkinsWalkRight_1
       rect:
         serializedVersion: 2
         x: 256
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a19946a848f15c6448ad858bf726fe44
-      internalID: 3639792628784520992
+      spriteID: 8147133bc98f49f4583584236c27bf5f
+      internalID: -3245081030107413625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jenkinsWalkDown_2
+      name: jenkinsWalkRight_2
       rect:
         serializedVersion: 2
         x: 512
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 036d166a439f7154aa2d48a5ed6f69bd
-      internalID: -8117419898709015218
+      spriteID: 63d5647efe9e9dc4a85429e88b05d867
+      internalID: -8779379876696129899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jenkinsWalkDown_3
+      name: jenkinsWalkRight_3
       rect:
         serializedVersion: 2
         x: 0
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 843d525066392e64c8c0be04a4b962fd
-      internalID: 3499503447154619739
+      spriteID: b3c4cbf3786c3494bb0b96d19977eb53
+      internalID: -2100611751242397417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jenkinsWalkDown_4
+      name: jenkinsWalkRight_4
       rect:
         serializedVersion: 2
         x: 256
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f251d855d6b39044fb42bcef8c1aa911
-      internalID: 1743917591059482837
+      spriteID: 6a4234552d441c142a21c77f2086a7da
+      internalID: 7739352242355137435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jenkinsWalkDown_5
+      name: jenkinsWalkRight_5
       rect:
         serializedVersion: 2
         x: 512
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 085750ab439ba1a459a40d5ed7682c51
-      internalID: 2020289595567114718
+      spriteID: 19a91cd7fdfb2df4d937c07cc47b7af8
+      internalID: 6130233306640726105
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jenkinsWalkDown_6
+      name: jenkinsWalkRight_6
       rect:
         serializedVersion: 2
         x: 0
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8d746341cdf4f04b88030dc51f650d8
-      internalID: -2506988028345926642
+      spriteID: a5ae8a71d2b00534ca5d9e96ef7ebc9e
+      internalID: -8146969854157916927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jenkinsWalkDown_7
+      name: jenkinsWalkRight_7
       rect:
         serializedVersion: 2
         x: 256
@@ -271,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe2aa9800a3c16b4cb6a6eb3b87da738
-      internalID: -6130511102882960335
+      spriteID: 7292bff75fd44aa4597b68a774fe6af5
+      internalID: -6010118321548156757
       vertices: []
       indices: 
       edges: []

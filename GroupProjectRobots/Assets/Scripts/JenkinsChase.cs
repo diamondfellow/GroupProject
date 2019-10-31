@@ -7,9 +7,10 @@ public class JenkinsChase : MonoBehaviour
     public Transform player;
     public float chaseSpeed = 2.0f;
     public float paceSpeed = 1.5f;
-    public float chaseTriggerDistance = 5.0f;
+    public float chaseTriggerDistance = 3.0f;
     Vector3 startPosition;
     bool home = true;
+    public bool goinghome = false;
     public Vector3 paceDirection;
     public float paceDistance = 3.0f;
     // Start is called before the first frame update
@@ -23,15 +24,11 @@ public class JenkinsChase : MonoBehaviour
     {
         Vector2 homeDirection = new Vector2(startPosition.x - transform.position.x, startPosition.y - transform.position.y);
         Vector2 chaseDirection = new Vector2(player.position.x - transform.position.x, player.position.y - transform.position.y);
-        if (chaseDirection.magnitude <= chaseTriggerDistance)
+        if (chaseDirection.magnitude <= chaseTriggerDistance && homeDirection.magnitude < 3 && !goinghome)
         {
             ChasePlayer();
         }
         else if (!home)
-        {
-            GoHome();
-        }
-        else if (homeDirection.magnitude < 3)
         {
             GoHome();
         }
@@ -49,11 +46,13 @@ public class JenkinsChase : MonoBehaviour
     }
     void GoHome()
     {
+        goinghome = true;
         Vector2 homeDirection = new Vector2(startPosition.x - transform.position.x, startPosition.y - transform.position.y);
-        if (homeDirection.magnitude < 1)
+        if (homeDirection.magnitude < 0.1f)
         {
             transform.position = startPosition;
             home = true;
+            goinghome = false;
         }
         else
         {
