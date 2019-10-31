@@ -44,8 +44,6 @@ public class HotBar : MonoBehaviour
     {
 
     }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyUp(KeyCode.Alpha1) && inventory1)
@@ -202,68 +200,63 @@ public class HotBar : MonoBehaviour
     }
     public void Hotbar1()
     {
-        if(inventoryitem1 == "purple" && inventory1)
+        switch (inventoryitem1)
         {
-            Purple.SetActive(false);
-            inventory1 = false;
-            inventorycounter -= 1;
-            Instantiate(purple1, player.position, player.rotation);
-
+            case "purple":
+                Purple.SetActive(false);
+                inventory1 = false;
+                inventorycounter -= 1;
+                Instantiate(purple1, player.position, player.rotation);
+                break;
+            case "blue":
+                Blue.SetActive(false);
+                inventory1 = false;
+                inventorycounter -= 1;
+                Instantiate(blue1, player.position, player.rotation);
+                break;
+            case "yellow":
+                Yellow.SetActive(false);
+                inventory1 = false;
+                inventorycounter -= 1;
+                Instantiate(yellow1, player.position, player.rotation);
+                break;
+            case "green":
+                Green.SetActive(false);
+                inventory1 = false;
+                inventorycounter -= 1;
+                Instantiate(green1, player.position, player.rotation);
+                break;
         }
-        else if(inventoryitem1 == "blue" && inventory1)
-        {
-            Blue.SetActive(false);
-            inventory1 = false;
-            inventorycounter -= 1;
-            Instantiate(blue1, player.position, player.rotation);
-        }
-        else if (inventoryitem1 == "yellow" && inventory1)
-        {
-            Yellow.SetActive(false);
-            inventory1 = false;
-            inventorycounter -= 1;
-            Instantiate(yellow1, player.position, player.rotation);
-        }
-        else if (inventoryitem1 == "green" && inventory1)
-        {
-            Green.SetActive(false);
-            inventory1 = false;
-            inventorycounter -= 1;
-            Instantiate(green1, player.position, player.rotation);
-        }
+ 
     }
     public void Hotbar2()
     {
+        switch (inventoryitem2)
         {
-            if (inventoryitem2 == "purple" && inventory2)
-            {
+            case "purple":
                 Purple1.SetActive(false);
                 inventory2 = false;
                 inventorycounter -= 1;
                 Instantiate(purple1, player.position, player.rotation);
-            }
-            else if (inventoryitem2 == "blue" && inventory2)
-            {
+                break;
+            case "blue":
                 Blue1.SetActive(false);
                 inventory2 = false;
                 inventorycounter -= 1;
                 Instantiate(blue1, player.position, player.rotation);
-
-            }
-            else if (inventoryitem2 == "yellow" && inventory2)
-            {
+                break;
+            case "yellow":
                 Yellow1.SetActive(false);
                 inventory2 = false;
                 inventorycounter -= 1;
                 Instantiate(yellow1, player.position, player.rotation);
-            }
-            else if (inventoryitem2 == "green" && inventory2)
-            {
+                break;
+            case "green":
                 Green1.SetActive(false);
                 inventory2 = false;
                 inventorycounter -= 1;
                 Instantiate(green1, player.position, player.rotation);
-            }
+                break;
         }
     } 
     public void Hotbar3()
@@ -331,8 +324,6 @@ public class HotBar : MonoBehaviour
                 inventory4 = false;
                 inventorycounter -= 1;
                 Instantiate(green1, player.position, player.rotation);
-
-                
 
             }
         }
