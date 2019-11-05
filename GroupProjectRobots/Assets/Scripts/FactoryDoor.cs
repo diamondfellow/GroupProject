@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FactoryDoor : MonoBehaviour
 {
@@ -15,11 +16,11 @@ public class FactoryDoor : MonoBehaviour
     {
         
     }
-     void OnTriggerStay2D(Collider2D collision)
+     void OnColliderStay2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Player" && PlayerPickup.hasCrowbar && Input.GetKeyDown(KeyCode.E))
+        if(collision.gameObject.tag == "Player" && Factorywood.wood)
         {
-            Destroy(gameObject);
+            SceneManager.LoadScene("Factory");
         }
     }
 }

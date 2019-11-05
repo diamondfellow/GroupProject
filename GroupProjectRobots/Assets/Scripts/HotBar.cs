@@ -8,7 +8,7 @@ public class HotBar : MonoBehaviour
     public GameObject Purple1;
     public GameObject Purple2;
     public GameObject Purple3;
-    public GameObject Blue;
+    public GameObject Lantern;
     public GameObject Blue1;
     public GameObject Blue2;
     public GameObject Blue3;
@@ -109,7 +109,7 @@ public class HotBar : MonoBehaviour
     {
         if (!inventory1)
         {
-            Blue.SetActive(true);
+            Lantern.SetActive(true);
             inventory1 = true;
             inventorycounter += 1;
             inventoryitem1 = "blue";
@@ -209,7 +209,7 @@ public class HotBar : MonoBehaviour
                 Instantiate(purple1, player.position, player.rotation);
                 break;
             case "blue":
-                Blue.SetActive(false);
+                Lantern.SetActive(false);
                 inventory1 = false;
                 inventorycounter -= 1;
                 Instantiate(blue1, player.position, player.rotation);
