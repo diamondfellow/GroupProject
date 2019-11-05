@@ -13,6 +13,9 @@ TagManager:
   - Crowbar
   - metalPipe
   - robotArm
+  - Town
+  - Outside
+  - Factory
   layers:
   - Default
   - TransparentFX
