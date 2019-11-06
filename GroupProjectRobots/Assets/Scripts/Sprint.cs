@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Sprint : MonoBehaviour
 {
-    public float SprintTimer = 4;
+    public float SprintTimer = 6;
     public float moveSpeed = 5;
     public bool exausted = false;
     // Start is called before the first frame update
@@ -46,15 +46,15 @@ public class Sprint : MonoBehaviour
             float y = Input.GetAxisRaw("Vertical");
             Vector2 moveDir = x * transform.right + y * transform.up;
             moveDir.Normalize();
-            GetComponent<Rigidbody2D>().velocity = moveDir * moveSpeed / 16;
+            GetComponent<Rigidbody2D>().velocity = moveDir * moveSpeed / 6;
         }
         else
         {
 
             SprintTimer += Time.deltaTime;
-            if (SprintTimer > 4)
+            if (SprintTimer > 6)
             {
-                SprintTimer = 4;
+                SprintTimer = 6;
                 exausted = false;
             }
             Vector3 mousePosition = Input.mousePosition;
