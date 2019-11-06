@@ -8,6 +8,7 @@ public class PlayerPickup : MonoBehaviour
     public static bool hasCrowbar = false;
     public static bool hasMetalPipe = false;
     public static bool hasRobotArm = false;
+    public static bool hasKeycard = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -63,6 +64,12 @@ public class PlayerPickup : MonoBehaviour
             Destroy(collision.gameObject);
             hasRobotArm = true;
             EnemyHP.damage = 3;
+        }
+        if (collision.gameObject.tag == "keycard" && Input.GetKeyDown(KeyCode.E))
+        {
+            Destroy(collision.gameObject);
+            hasKeycard = true;
+            
         }
 
 
