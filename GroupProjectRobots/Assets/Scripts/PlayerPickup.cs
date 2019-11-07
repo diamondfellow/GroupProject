@@ -22,55 +22,45 @@ public class PlayerPickup : MonoBehaviour
     }
     public void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Purple" && Input.GetKeyDown(KeyCode.E))
+        if(collision.gameObject.tag == "lantern" && Input.GetKeyDown(KeyCode.E))
         {
             Destroy(collision.gameObject);
-            hotbar.PurplePickup();
+            hotbar.LanternPickup();
         }
-        if (collision.gameObject.tag == "Green" && Input.GetKeyDown(KeyCode.E))
+        if (collision.gameObject.tag == "crowbar" && Input.GetKeyDown(KeyCode.E))
         {
-            Destroy(collision.gameObject);
-            hotbar.GreenPickup();
-        }
-        if (collision.gameObject.tag == "Blue" && Input.GetKeyDown(KeyCode.E))
-        {
-            Destroy(collision.gameObject);
-            hotbar.BluePickup();
-        }
-        if (collision.gameObject.tag == "Yellow" && Input.GetKeyDown(KeyCode.E))
-        {
-            Destroy(collision.gameObject);
-            hotbar.YellowPickup();
-        }
-        if(collision.gameObject.tag == "Crowbar" && Input.GetKeyDown(KeyCode.E))
-        {
-            Destroy(collision.gameObject);
-            hasCrowbar = true;
-        }
-        if (collision.gameObject.tag == "Crowbar" && Input.GetKeyDown(KeyCode.E))
-        {
+            hotbar.CrowbarPickup();
             Destroy(collision.gameObject);
             hasCrowbar = true;
             EnemyHP.damage = 1;
         }
+        if (collision.gameObject.tag == "bandage" && Input.GetKeyDown(KeyCode.E))
+        {
+            Destroy(collision.gameObject);
+            hotbar.BandagePickup();
+        }
+        if (collision.gameObject.tag == "keycard" && Input.GetKeyDown(KeyCode.E))
+        {
+            hotbar.KeycardPickup();
+            Destroy(collision.gameObject);
+            hasKeycard = true;
+        }
+
         if (collision.gameObject.tag == "metalPipe" && Input.GetKeyDown(KeyCode.E))
         {
+            hotbar.MetalPipePickup();
             Destroy(collision.gameObject);
             hasMetalPipe = true;
             EnemyHP.damage = 2;
         }
         if (collision.gameObject.tag == "robotArm" && Input.GetKeyDown(KeyCode.E))
         {
+            hotbar.RobotArmPickup();
             Destroy(collision.gameObject);
             hasRobotArm = true;
             EnemyHP.damage = 3;
         }
-        if (collision.gameObject.tag == "keycard" && Input.GetKeyDown(KeyCode.E))
-        {
-            Destroy(collision.gameObject);
-            hasKeycard = true;
-            
-        }
+
 
 
     }

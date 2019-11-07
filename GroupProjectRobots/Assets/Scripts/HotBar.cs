@@ -4,22 +4,30 @@ using UnityEngine;
 
 public class HotBar : MonoBehaviour
 {
-    public GameObject Purple;
-    public GameObject Purple1;
-    public GameObject Purple2;
-    public GameObject Purple3;
-    public GameObject Lantern;
-    public GameObject Blue1;
-    public GameObject Blue2;
-    public GameObject Blue3;
-    public GameObject Yellow;
-    public GameObject Yellow1;
-    public GameObject Yellow2;
-    public GameObject Yellow3;
-    public GameObject Green;
-    public GameObject Green1;
-    public GameObject Green2;
-    public GameObject Green3;
+    public GameObject lantern;
+    public GameObject lantern1;
+    public GameObject lantern2;
+    public GameObject lantern3;
+    public GameObject bandage;
+    public GameObject bandage1;
+    public GameObject bandage2;
+    public GameObject bandage3;
+    public GameObject keycard;
+    public GameObject keycard1;
+    public GameObject keycard2;
+    public GameObject keycard3;
+    public GameObject crowbar;
+    public GameObject crowbar1;
+    public GameObject crowbar2;
+    public GameObject crowbar3;
+    public GameObject metalpipe;
+    public GameObject metalpipe1;
+    public GameObject metalpipe2;
+    public GameObject metalpipe3;
+    public GameObject robotarm;
+    public GameObject robotarm1;
+    public GameObject robotarm2;
+    public GameObject robotarm3;
     public bool inventory1 = false;
     public bool inventory2 = false;
     public bool inventory3 = false;
@@ -31,10 +39,10 @@ public class HotBar : MonoBehaviour
     public static string inventoryitem3;
     public static string inventoryitem4;
     public Transform player;
-    public GameObject yellow1;
-    public GameObject blue1;
-    public GameObject green1;
-    public GameObject purple1;
+    public GameObject Keycard;
+    public GameObject Bandage;
+    public GameObject Crowbar;
+    public GameObject Lantern;
     
 
 
@@ -72,159 +80,227 @@ public class HotBar : MonoBehaviour
             inventoryfull = false;
         }
     }
-    public void PurplePickup()
+    public void  LanternPickup()
     {
         if (!inventory1)
         {
 
-            Purple.SetActive(true);
+            lantern.SetActive(true);
             inventory1 = true;
             inventorycounter += 1;
-            inventoryitem1 = "purple";
+            inventoryitem1 = "lantern";
         }
         else if (!inventory2)
         {
-            Purple1.SetActive(true);
+            lantern1.SetActive(true);
             inventory2 = true;
             inventorycounter += 1;
-            inventoryitem2 = "purple";
+            inventoryitem2 = "lantern";
         }
         else if (!inventory3)
         {
-            Purple2.SetActive(true);
+            lantern2.SetActive(true);
             inventory3 = true;
             inventorycounter += 1;
-            inventoryitem3 = "purple";
+            inventoryitem3 = "lantern";
         }
         else if (!inventory4)
         {
-            Purple3.SetActive(true);
+            lantern3.SetActive(true);
             inventory4 = true;
             inventorycounter += 1;
-            inventoryitem4 = "purple";
+            inventoryitem4 = "lantern";
         }
 
     }
-    public void BluePickup()
+    public void BandagePickup()
     {
         if (!inventory1)
         {
-            Lantern.SetActive(true);
+            bandage.SetActive(true);
             inventory1 = true;
             inventorycounter += 1;
-            inventoryitem1 = "blue";
+            inventoryitem1 = "bandage";
         }
         else if (!inventory2)
         {
-            Blue1.SetActive(true);
+            bandage.SetActive(true);
             inventory2 = true;
             inventorycounter += 1;
-            inventoryitem2 = "blue";
+            inventoryitem2 = "bandage";
         }
         else if (!inventory3)
         {
-            Blue2.SetActive(true);
+            bandage1.SetActive(true);
             inventory3 = true;
             inventorycounter += 1;
-            inventoryitem3 = "blue";
+            inventoryitem3 = "bandage";
         }
         else if (!inventory4)
         {
-            Blue3.SetActive(true);
+            bandage3.SetActive(true);
             inventory4 = true;
             inventorycounter += 1;
-            inventoryitem4 = "blue";
+            inventoryitem4 = "bandage";
         }
     }
-    public void GreenPickup()
+    public void CrowbarPickup()
     {
         if (!inventory1)
         {
-            Green.SetActive(true);
+            crowbar.SetActive(true);
             inventory1 = true;
             inventorycounter += 1;
-            inventoryitem1 = "green";
+            inventoryitem1 = "crowbar";
         }
         else if (!inventory2)
         {
-            Green1.SetActive(true);
+            crowbar1.SetActive(true);
             inventory2 = true;
             inventorycounter += 1;
-            inventoryitem2 = "green";
+            inventoryitem2 = "crowbar";
         }
         else if (!inventory3)
         {
-            Green2.SetActive(true);
+            crowbar2.SetActive(true);
             inventory3 = true;
             inventorycounter += 1;
-            inventoryitem3 = "green";
+            inventoryitem3 = "crowbar";
         }
         else if (!inventory4)
         {
-            Green3.SetActive(true);
+            crowbar3.SetActive(true);
             inventory4 = true;
             inventorycounter += 1;
-            inventoryitem4 = "green";
+            inventoryitem4 = "crowbar";
         }
     }
-    public void YellowPickup()
+    public void KeycardPickup()
     {
         if (!inventory1)
         {
-            Yellow.SetActive(true);
+            keycard.SetActive(true);
             inventory1 = true;
             inventorycounter += 1;
-            inventoryitem1 = "yellow";
+            inventoryitem1 = "keycard";
         }
         else if (!inventory2)
         {
-            Yellow1.SetActive(true);
+            keycard1.SetActive(true);
             inventory2 = true;
             inventorycounter += 1;
-            inventoryitem2 = "yellow";
+            inventoryitem2 = "keycard";
         }
         else if (!inventory3)
         {
-            Yellow2.SetActive(true);
+            keycard2.SetActive(true);
             inventory3 = true;
             inventorycounter += 1;
-            inventoryitem3 = "yellow";
+            inventoryitem3 = "keycard";
         }
         else if (!inventory4)
         {
-            Yellow3.SetActive(true);
+            keycard3.SetActive(true);
             inventory4 = true;
             inventorycounter += 1;
-            inventoryitem4 = "yellow";
+            inventoryitem4 = "keycard";
+        }
+    }
+    public void MetalPipePickup()
+    {
+        if (!inventory1)
+        {
+            metalpipe.SetActive(true);
+            inventory1 = true;
+            inventorycounter += 1;
+            inventoryitem1 = "metalpipe";
+        }
+        else if (!inventory2)
+        {
+            metalpipe1.SetActive(true);
+            inventory2 = true;
+            inventorycounter += 1;
+            inventoryitem2 = "metalpipe";
+        }
+        else if (!inventory3)
+        {
+            metalpipe2.SetActive(true);
+            inventory3 = true;
+            inventorycounter += 1;
+            inventoryitem3 = "metalpipe";
+        }
+        else if (!inventory4)
+        {
+            metalpipe3.SetActive(true);
+            inventory4 = true;
+            inventorycounter += 1;
+            inventoryitem4 = "metalpipe";
+        }
+    }
+    public void RobotArmPickup()
+    {
+        if (!inventory1)
+        {
+            robotarm.SetActive(true);
+            inventory1 = true;
+            inventorycounter += 1;
+            inventoryitem1 = "robotarm";
+        }
+        else if (!inventory2)
+        {
+            robotarm1.SetActive(true);
+            inventory2 = true;
+            inventorycounter += 1;
+            inventoryitem2 = "robotarm";
+        }
+        else if (!inventory3)
+        {
+            robotarm2.SetActive(true);
+            inventory3 = true;
+            inventorycounter += 1;
+            inventoryitem3 = "robotarm";
+        }
+        else if (!inventory4)
+        {
+            robotarm3.SetActive(true);
+            inventory4 = true;
+            inventorycounter += 1;
+            inventoryitem4 = "robotarm";
         }
     }
     public void Hotbar1()
     {
         switch (inventoryitem1)
         {
-            case "purple":
-                Purple.SetActive(false);
+            case "lantern":
+                lantern.SetActive(false);
                 inventory1 = false;
                 inventorycounter -= 1;
-                Instantiate(purple1, player.position, player.rotation);
+                Instantiate(Lantern, player.position, player.rotation);
                 break;
-            case "blue":
-                Lantern.SetActive(false);
+            case "bandage":
+                bandage.SetActive(false);
                 inventory1 = false;
                 inventorycounter -= 1;
-                Instantiate(blue1, player.position, player.rotation);
+                Instantiate(Bandage, player.position, player.rotation);
                 break;
-            case "yellow":
-                Yellow.SetActive(false);
+            case "keycard":
+                keycard.SetActive(false);
                 inventory1 = false;
                 inventorycounter -= 1;
-                Instantiate(yellow1, player.position, player.rotation);
+                Instantiate(Keycard, player.position, player.rotation);
                 break;
-            case "green":
-                Green.SetActive(false);
+            case "crowbar":
+                crowbar.SetActive(false);
                 inventory1 = false;
                 inventorycounter -= 1;
-                Instantiate(green1, player.position, player.rotation);
+                Instantiate(Crowbar, player.position, player.rotation);
+                break;
+            case "metalpipe":
+                metalpipe.SetActive(false);
+                inventory1 = false;
+                inventorycounter -= 1;
+                Instantiate(Crowbar, player.position, player.rotation);
                 break;
         }
  
@@ -233,99 +309,108 @@ public class HotBar : MonoBehaviour
     {
         switch (inventoryitem2)
         {
-            case "purple":
-                Purple1.SetActive(false);
+            case "lantern":
+                lantern1.SetActive(false);
                 inventory2 = false;
                 inventorycounter -= 1;
-                Instantiate(purple1, player.position, player.rotation);
+                Instantiate(Lantern, player.position, player.rotation);
                 break;
-            case "blue":
-                Blue1.SetActive(false);
+            case "bandage":
+                bandage1.SetActive(false);
                 inventory2 = false;
                 inventorycounter -= 1;
-                Instantiate(blue1, player.position, player.rotation);
+                Instantiate(Bandage, player.position, player.rotation);
                 break;
-            case "yellow":
-                Yellow1.SetActive(false);
+            case "keycard":
+                keycard1.SetActive(false);
                 inventory2 = false;
                 inventorycounter -= 1;
-                Instantiate(yellow1, player.position, player.rotation);
+                Instantiate(Keycard, player.position, player.rotation);
                 break;
-            case "green":
-                Green1.SetActive(false);
+            case "crowbar":
+                crowbar1.SetActive(false);
                 inventory2 = false;
                 inventorycounter -= 1;
-                Instantiate(green1, player.position, player.rotation);
+                Instantiate(Crowbar, player.position, player.rotation);
+                break;
+            case "metalpipe":
+                metalpipe1.SetActive(false);
+                inventory2 = false;
+                inventorycounter -= 1;
+                Instantiate(Crowbar, player.position, player.rotation);
                 break;
         }
-    } 
+    }
     public void Hotbar3()
     {
-            {
-                if (inventoryitem3 == "purple" && inventory3)
-                {
-                    Purple2.SetActive(false);
-                    inventory3 = false;
-                    inventorycounter -= 1;
-                    Instantiate(purple1, player.position, player.rotation);
-                }
-                else if (inventoryitem3 == "blue" && inventory3)
-                {
-                    Blue2.SetActive(false);
-                    inventory3 = false;
-                    inventorycounter -= 1;
-                    Instantiate(blue1, player.position, player.rotation);
-
-                }
-                else if (inventoryitem3 == "yellow" && inventory3)
-                {
-                    Yellow2.SetActive(false);
-                    inventory3 = false;
-                    inventorycounter -= 1;
-                    Instantiate(yellow1, player.position, player.rotation);
-                }
-                else if (inventoryitem3 == "green" && inventory3)
-                {
-                    Green2.SetActive(false);
-                    inventory3 = false;
-                    inventorycounter -= 1;
-                    Instantiate(green1, player.position, player.rotation);
-                }
-            }
+        switch (inventoryitem3)
+        {
+            case "lantern":
+                lantern2.SetActive(false);
+                inventory3 = false;
+                inventorycounter -= 1;
+                Instantiate(Lantern, player.position, player.rotation);
+                break;
+            case "bandage":
+                bandage2.SetActive(false);
+                inventory3 = false;
+                inventorycounter -= 1;
+                Instantiate(Bandage, player.position, player.rotation);
+                break;
+            case "keycard":
+                keycard2.SetActive(false);
+                inventory3 = false;
+                inventorycounter -= 1;
+                Instantiate(Keycard, player.position, player.rotation);
+                break;
+            case "crowbar":
+                crowbar2.SetActive(false);
+                inventory3 = false;
+                inventorycounter -= 1;
+                Instantiate(Crowbar, player.position, player.rotation);
+                break;
+            case "metalpipe":
+                metalpipe2.SetActive(false);
+                inventory3 = false;
+                inventorycounter -= 1;
+                Instantiate(Crowbar, player.position, player.rotation);
+                break;
         }
+    }
     public void Hotbar4()
     {
+        switch (inventoryitem4)
         {
-            if (inventoryitem4 == "purple" && inventory4)
-            {
-                Purple3.SetActive(false);
+            case "lantern":
+                lantern3.SetActive(false);
                 inventory4 = false;
                 inventorycounter -= 1;
-                Instantiate(purple1, player.position, player.rotation);
-
-            }
-            else if (inventoryitem4 == "blue" && inventory4)
-            {
-                Blue3.SetActive(false);
+                Instantiate(Lantern, player.position, player.rotation);
+                break;
+            case "bandage":
+                bandage3.SetActive(false);
                 inventory4 = false;
                 inventorycounter -= 1;
-                Instantiate(blue1, player.position, player.rotation);
-            }
-            else if (inventoryitem4 == "yellow" && inventory4)
-            {
-                Yellow3.SetActive(false);
+                Instantiate(Bandage, player.position, player.rotation);
+                break;
+            case "keycard":
+                keycard3.SetActive(false);
                 inventory4 = false;
                 inventorycounter -= 1;
-                Instantiate(yellow1, player.position, player.rotation);
-            }
-            else if (inventoryitem4 == "green" && inventory4)
-            {
-                Green3.SetActive(false);
+                Instantiate(Keycard, player.position, player.rotation);
+                break;
+            case "crowbar":
+                crowbar3.SetActive(false);
                 inventory4 = false;
                 inventorycounter -= 1;
-                Instantiate(green1, player.position, player.rotation);
-
-            }
+                Instantiate(Crowbar, player.position, player.rotation);
+                break;
+            case "metalpipe":
+                metalpipe3.SetActive(false);
+                inventory4 = false;
+                inventorycounter -= 1;
+                Instantiate(Crowbar, player.position, player.rotation);
+                break;
         }
     }
     public void UseItem1()
@@ -337,15 +422,25 @@ public class HotBar : MonoBehaviour
     }
     public void UseItem2()
     {
-
+        if (inventoryitem2 == "bandage")
+        {
+            PlayerHP.health = 6;
+        }
     }
     public void UseItem3()
     {
+        if (inventoryitem3 == "bandage")
+        {
+            PlayerHP.health = 6;
+        }
 
     }
     public void UseItem4()
     {
-
+        if (inventoryitem4 == "bandage")
+        {
+            PlayerHP.health = 6;
+        }
     }
 }
 

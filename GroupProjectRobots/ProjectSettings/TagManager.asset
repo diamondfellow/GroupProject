@@ -16,6 +16,10 @@ TagManager:
   - Town
   - Outside
   - Factory
+  - bandage
+  - lantern
+  - crowbar
+  - keycard
   layers:
   - Default
   - TransparentFX

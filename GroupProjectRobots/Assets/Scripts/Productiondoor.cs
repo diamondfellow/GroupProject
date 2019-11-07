@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Productiondoor : MonoBehaviour
 {
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,7 @@ public class Productiondoor : MonoBehaviour
     }
      public void OnTriggerStay2D(Collider2D collision)
     {
-       if(collision.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E))
+       if(collision.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E) && PlayerPickup.hasKeycard)
         {
             Destroy(gameObject);
             
