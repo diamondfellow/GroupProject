@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 06cb006b36a65f44da11a23177f90635
+  - enabled: 1
+    path: Assets/Scenes/DeadTown.unity
+    guid: 485d6cebf917c7f40a6c42cf148066ae
   m_configObjects: {}
