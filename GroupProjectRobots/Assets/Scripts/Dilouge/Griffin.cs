@@ -15,7 +15,7 @@ public class Griffin : MonoBehaviour
      void OnTriggerStay2D(Collider2D collision)
      {
 
-        if (Input.GetKeyDown(KeyCode.E) && !isTalking )
+        if (Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("OOG");
             isTalking = true;

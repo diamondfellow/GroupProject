@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Max : MonoBehaviour
+public class Guards : MonoBehaviour
 {
     public Text diolouge;
     public Text name1;
@@ -14,24 +14,20 @@ public class Max : MonoBehaviour
     void OnTriggerStay2D(Collider2D collision)
     {
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (!isTalking)
         {
             isTalking = true;
-            name1.text = "Max";
+            name1.text = "Guard";
 
-            int num = Random.Range(0, 3);
+            int num = Random.Range(0, 2);
             if (num == 0)
             {
-                diolouge.text = "Hi " + PlayerPrefs.GetString("Playername" + "!");
-            }
-            if (num == 1)
-            {
-                diolouge.text = "Hey if you see Taran ask him about my on-brand sandwich cookies.";
+                diolouge.text = "Hey Mavis is looking for you.";
             }
             canvas.SetActive(true);
-            if (num == 2)
+            if (num == 1)
             {
-                diolouge.text = "It robit time!";
+                diolouge.text = "Hey Mavis is looking for you.";
             }
         }
 
