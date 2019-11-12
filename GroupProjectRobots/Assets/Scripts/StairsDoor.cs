@@ -5,6 +5,7 @@ using UnityEngine;
 public class StairsDoor : MonoBehaviour
 {
     public GameObject door;
+    public GameObject scanner;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class StairsDoor : MonoBehaviour
         {
             Destroy(gameObject);
             Destroy(door);
+            Destroy(scanner);
 
 
         } 
