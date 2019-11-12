@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Town : MonoBehaviour
+public class DeadTown : MonoBehaviour
 {
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Town")
+        if (collision.gameObject.tag == "DeadTown")
         {
-            SceneManager.LoadScene("Town");
+            SceneManager.LoadScene("DeadTown");
         }
     }
     // Start is called before the first frame update

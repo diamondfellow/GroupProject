@@ -19,7 +19,33 @@ public class PlayerShoot : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (Input.GetButton("Fire1") && timer > shootDelay)
+        if (Input.GetButton("Fire1") && timer > shootDelay && PlayerPickup.hasCrowbar == true)
+        {
+            timer = 0;
+            GameObject bullet = Instantiate(prefab, transform.position, Quaternion.identity);
+            Vector3 mousePosition = Input.mousePosition;
+            Debug.Log("mouse position 1: " + mousePosition);
+            mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+            Debug.Log("mouse position 2: " + mousePosition);
+            Vector2 shootDirection = new Vector2(mousePosition.x - transform.position.x, mousePosition.y - transform.position.y);
+            shootDirection.Normalize();
+            bullet.GetComponent<Rigidbody2D>().velocity = shootDirection * shootSpeed;
+            Destroy(bullet, bulletLifetime);
+        }
+        else if (Input.GetButton("Fire1") && timer > shootDelay && PlayerPickup.hasRobotArm == true)
+        {
+            timer = 0;
+            GameObject bullet = Instantiate(prefab, transform.position, Quaternion.identity);
+            Vector3 mousePosition = Input.mousePosition;
+            Debug.Log("mouse position 1: " + mousePosition);
+            mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+            Debug.Log("mouse position 2: " + mousePosition);
+            Vector2 shootDirection = new Vector2(mousePosition.x - transform.position.x, mousePosition.y - transform.position.y);
+            shootDirection.Normalize();
+            bullet.GetComponent<Rigidbody2D>().velocity = shootDirection * shootSpeed;
+            Destroy(bullet, bulletLifetime);
+        }
+        else if (Input.GetButton("Fire1") && timer > shootDelay && PlayerPickup.hasMetalPipe == true)
         {
             timer = 0;
             GameObject bullet = Instantiate(prefab, transform.position, Quaternion.identity);
