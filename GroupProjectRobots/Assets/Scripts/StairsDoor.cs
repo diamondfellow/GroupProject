@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Productiondoor : MonoBehaviour
+public class StairsDoor : MonoBehaviour
 {
-    public GameObject scanner;
+    public GameObject door;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,13 +16,14 @@ public class Productiondoor : MonoBehaviour
     {
         
     }
-     public void OnTriggerStay2D(Collider2D collision)
+    public void OnTriggerStay2D(Collider2D collision)
     {
-       if(collision.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E) && PlayerPickup.hasKeycard)
+         if(collision.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E))
         {
             Destroy(gameObject);
-            Destroy(scanner);
-            
+            Destroy(door);
+
+
         } 
     }
 }
