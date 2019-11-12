@@ -17,7 +17,7 @@ public class Jenkins : MonoBehaviour
         if (!isTalking)
         {
             isTalking = true;
-            name1.text = "Jenkins";
+            name1.text = "Jenkins:";
 
             int num = Random.Range(0, 2);
             if (num == 0)

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Guards : MonoBehaviour
+public class TheresNoGoingBack : MonoBehaviour
 {
     public Text diolouge;
     public Text name1;
@@ -17,17 +17,17 @@ public class Guards : MonoBehaviour
         if (!isTalking)
         {
             isTalking = true;
-            name1.text = "Guard:";
+            name1.text = PlayerPrefs.GetString("Playername") + ":";
 
             int num = Random.Range(0, 2);
             if (num == 0)
             {
-                diolouge.text = "Hey, Mavis was looking for you.";
+                diolouge.text = "I know im scared but iv'e got to be brave, for my town!";
             }
             canvas.SetActive(true);
             if (num == 1)
             {
-                diolouge.text = "Hey, Mavis was looking for you.";
+                diolouge.text = "I can't go back now i have a job to do!";
             }
         }
 

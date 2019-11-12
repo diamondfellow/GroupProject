@@ -20,12 +20,12 @@ public class Griffin : MonoBehaviour
             Debug.Log("OOG");
             isTalking = true;
             //Time.timeScale = 0;
-            name1.text = "Griffin";
+            name1.text = "Griffin:";
             
             int num = Random.Range(0, 2);
             if (num == 0)
             {
-               diolouge.text = "Hey there " + PlayerPrefs.GetString("Playername" + "!");
+               diolouge.text = "Hey there " + PlayerPrefs.GetString("Playername") + "!";
             }
             if(num == 1)
             {

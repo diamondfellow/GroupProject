@@ -8,6 +8,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Name");
     }
+    public void SaveName()
+    {
+        SceneManager.LoadScene("Town");
+    }
     public void QuitGame()
     {
         Application.Quit();

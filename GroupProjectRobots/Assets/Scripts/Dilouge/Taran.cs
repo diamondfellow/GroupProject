@@ -17,12 +17,12 @@ public class Taran : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             isTalking = true;
-            name1.text = "Taran";
+            name1.text = "Taran:";
 
             int num = Random.Range(0, 3);
             if (num == 0)
             {
-                diolouge.text = "Sup " + PlayerPrefs.GetString("Playername" + "!");
+                diolouge.text = "Sup " + PlayerPrefs.GetString("Playername") + "!";
             }
             if (num == 1)
             {

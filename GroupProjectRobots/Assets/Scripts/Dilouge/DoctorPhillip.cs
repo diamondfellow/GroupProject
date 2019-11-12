@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Max : MonoBehaviour
+public class DoctorPhillip : MonoBehaviour
 {
     public Text diolouge;
     public Text name1;
@@ -17,21 +17,21 @@ public class Max : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             isTalking = true;
-            name1.text = "Max:";
+            name1.text = "Doctor Phillip:";
 
             int num = Random.Range(0, 3);
             if (num == 0)
             {
-                diolouge.text = "Hi " + PlayerPrefs.GetString("Playername") + "!";
+                diolouge.text = "Hello " + PlayerPrefs.GetString("Playername") + "!" + " It’s so good to see you. You never swing by the clinic anymore, what’s up with that? Swing by more often, I want to see you!";
             }
             if (num == 1)
             {
-                diolouge.text = "Hey if you see Taran ask him about my on-brand sandwich cookies.";
+                diolouge.text = PlayerPrefs.GetString("Playername") + "!" + " it’s so great to see your lovely face. You should really come by more, an old man gets lonely you know?";
             }
             canvas.SetActive(true);
             if (num == 2)
             {
-                diolouge.text = "It robit time!";
+                diolouge.text = "Try not to die!";
             }
         }
 
