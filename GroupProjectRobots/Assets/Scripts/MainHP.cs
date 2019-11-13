@@ -11,7 +11,7 @@ public class MainHP : MonoBehaviour
     {
         if (collision.gameObject.tag == "enemy")
         {
-            health = health - 1;
+            health = health - 10;
             if (health < 1)
             {
                 SceneManager.LoadScene("MainMenu");
