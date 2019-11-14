@@ -43,15 +43,76 @@ public class HotBar : MonoBehaviour
     public GameObject Bandage;
     public GameObject Crowbar;
     public GameObject Lantern;
-    
+
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+        switch (PlayerPrefs.GetString("inventory1"))
+        {
+            case "lantern":
+                LanternPickup();
+                break;
+            case "bandage":
+                BandagePickup();
+                break;
+            case "keycard":
+                KeycardPickup();
+                break;
+            case "crowbar":
+                CrowbarPickup();
+                break;
 
-    }
+        }
+        switch (PlayerPrefs.GetString("inventory2"))
+        {
+            case "lantern":
+                LanternPickup();
+                break;
+            case "bandage":
+                BandagePickup();
+                break;
+            case "keycard":
+                KeycardPickup();
+                break;
+            case "crowbar":
+                CrowbarPickup();
+                break;
+        }
+        switch (PlayerPrefs.GetString("inventory3"))
+        {
+            case "lantern":
+                LanternPickup();
+                break;
+            case "bandage":
+                BandagePickup();
+                break;
+            case "keycard":
+                KeycardPickup();
+                break;
+            case "crowbar":
+                CrowbarPickup();
+                break;
+        }
+        switch (PlayerPrefs.GetString("inventory4"))
+        {
+            case "lantern":
+                LanternPickup();
+                break;
+            case "bandage":
+                BandagePickup();
+                break;
+            case "keycard":
+                KeycardPickup();
+                break;
+            case "crowbar":
+                CrowbarPickup();
+                break;
+
+        }
+    } 
     void Update()
     {
         if (Input.GetKeyUp(KeyCode.Alpha1) && inventory1)
@@ -89,6 +150,7 @@ public class HotBar : MonoBehaviour
             inventory1 = true;
             inventorycounter += 1;
             inventoryitem1 = "lantern";
+            PlayerPrefs.SetString("inventory1", "lantern");
         }
         else if (!inventory2)
         {
@@ -96,6 +158,7 @@ public class HotBar : MonoBehaviour
             inventory2 = true;
             inventorycounter += 1;
             inventoryitem2 = "lantern";
+            PlayerPrefs.SetString("inventory2", "lantern");
         }
         else if (!inventory3)
         {
@@ -103,6 +166,8 @@ public class HotBar : MonoBehaviour
             inventory3 = true;
             inventorycounter += 1;
             inventoryitem3 = "lantern";
+            PlayerPrefs.SetString("inventory3", "lantern");
+
         }
         else if (!inventory4)
         {
@@ -110,6 +175,7 @@ public class HotBar : MonoBehaviour
             inventory4 = true;
             inventorycounter += 1;
             inventoryitem4 = "lantern";
+            PlayerPrefs.SetString("inventory4", "lantern");
         }
 
     }
@@ -121,6 +187,7 @@ public class HotBar : MonoBehaviour
             inventory1 = true;
             inventorycounter += 1;
             inventoryitem1 = "bandage";
+            PlayerPrefs.SetString("inventory1", "bandage");
         }
         else if (!inventory2)
         {
@@ -128,6 +195,7 @@ public class HotBar : MonoBehaviour
             inventory2 = true;
             inventorycounter += 1;
             inventoryitem2 = "bandage";
+            PlayerPrefs.SetString("inventory2", "bandage");
         }
         else if (!inventory3)
         {
@@ -135,6 +203,7 @@ public class HotBar : MonoBehaviour
             inventory3 = true;
             inventorycounter += 1;
             inventoryitem3 = "bandage";
+            PlayerPrefs.SetString("inventory3", "bandage");
         }
         else if (!inventory4)
         {
@@ -142,6 +211,7 @@ public class HotBar : MonoBehaviour
             inventory4 = true;
             inventorycounter += 1;
             inventoryitem4 = "bandage";
+            PlayerPrefs.SetString("inventory4", "bandage");
         }
     }
     public void CrowbarPickup()
@@ -152,6 +222,7 @@ public class HotBar : MonoBehaviour
             inventory1 = true;
             inventorycounter += 1;
             inventoryitem1 = "crowbar";
+            PlayerPrefs.SetString("inventory1", "crowbar");
         }
         else if (!inventory2)
         {
@@ -159,6 +230,7 @@ public class HotBar : MonoBehaviour
             inventory2 = true;
             inventorycounter += 1;
             inventoryitem2 = "crowbar";
+            PlayerPrefs.SetString("inventory2", "crowbar");
         }
         else if (!inventory3)
         {
@@ -166,6 +238,7 @@ public class HotBar : MonoBehaviour
             inventory3 = true;
             inventorycounter += 1;
             inventoryitem3 = "crowbar";
+            PlayerPrefs.SetString("inventory3", "crowbar");
         }
         else if (!inventory4)
         {
@@ -173,6 +246,8 @@ public class HotBar : MonoBehaviour
             inventory4 = true;
             inventorycounter += 1;
             inventoryitem4 = "crowbar";
+            PlayerPrefs.SetString("inventory4", "crowbar");
+            
         }
     }
     public void KeycardPickup()
@@ -183,6 +258,7 @@ public class HotBar : MonoBehaviour
             inventory1 = true;
             inventorycounter += 1;
             inventoryitem1 = "keycard";
+            PlayerPrefs.SetString("inventory1", "keycard");
         }
         else if (!inventory2)
         {
@@ -190,6 +266,7 @@ public class HotBar : MonoBehaviour
             inventory2 = true;
             inventorycounter += 1;
             inventoryitem2 = "keycard";
+            PlayerPrefs.SetString("inventory2", "keycard");
         }
         else if (!inventory3)
         {
@@ -197,6 +274,7 @@ public class HotBar : MonoBehaviour
             inventory3 = true;
             inventorycounter += 1;
             inventoryitem3 = "keycard";
+            PlayerPrefs.SetString("inventory3", "keycard");
         }
         else if (!inventory4)
         {
@@ -204,6 +282,7 @@ public class HotBar : MonoBehaviour
             inventory4 = true;
             inventorycounter += 1;
             inventoryitem4 = "keycard";
+            PlayerPrefs.SetString("inventory4", "keycard");
         }
     }
     public void MetalPipePickup()
