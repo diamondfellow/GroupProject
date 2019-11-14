@@ -356,30 +356,40 @@ public class HotBar : MonoBehaviour
                 inventory1 = false;
                 inventorycounter -= 1;
                 Instantiate(Lantern, player.position, player.rotation);
+                inventoryitem1 = "";
+                PlayerPrefs.SetString("inventory1", "");
                 break;
             case "bandage":
                 bandage.SetActive(false);
                 inventory1 = false;
                 inventorycounter -= 1;
                 Instantiate(Bandage, player.position, player.rotation);
+                inventoryitem2 = "";
+                PlayerPrefs.SetString("inventory1", "");
                 break;
             case "keycard":
                 keycard.SetActive(false);
                 inventory1 = false;
                 inventorycounter -= 1;
                 Instantiate(Keycard, player.position, player.rotation);
+                inventoryitem2 = "";
+                PlayerPrefs.SetString("inventory1", "");
                 break;
             case "crowbar":
                 crowbar.SetActive(false);
                 inventory1 = false;
                 inventorycounter -= 1;
                 Instantiate(Crowbar, player.position, player.rotation);
+                inventoryitem2 = "";
+                PlayerPrefs.SetString("inventory1", "");
                 break;
             case "metalpipe":
                 metalpipe.SetActive(false);
                 inventory1 = false;
                 inventorycounter -= 1;
                 Instantiate(Crowbar, player.position, player.rotation);
+                inventoryitem2 = "";
+                PlayerPrefs.SetString("inventory1", "");
                 break;
         }
  
@@ -393,30 +403,40 @@ public class HotBar : MonoBehaviour
                 inventory2 = false;
                 inventorycounter -= 1;
                 Instantiate(Lantern, player.position, player.rotation);
+                inventoryitem2 = "";
+                PlayerPrefs.SetString("inventory2", "");
                 break;
             case "bandage":
                 bandage1.SetActive(false);
                 inventory2 = false;
                 inventorycounter -= 1;
                 Instantiate(Bandage, player.position, player.rotation);
+                inventoryitem2 = "";
+                PlayerPrefs.SetString("inventory2", "");
                 break;
             case "keycard":
                 keycard1.SetActive(false);
                 inventory2 = false;
                 inventorycounter -= 1;
                 Instantiate(Keycard, player.position, player.rotation);
+                inventoryitem2 = "";
+                PlayerPrefs.SetString("inventory2", "");
                 break;
             case "crowbar":
                 crowbar1.SetActive(false);
                 inventory2 = false;
                 inventorycounter -= 1;
                 Instantiate(Crowbar, player.position, player.rotation);
+                inventoryitem2 = "";
+                PlayerPrefs.SetString("inventory2", "");
                 break;
             case "metalpipe":
                 metalpipe1.SetActive(false);
                 inventory2 = false;
                 inventorycounter -= 1;
                 Instantiate(Crowbar, player.position, player.rotation);
+                inventoryitem2 = "";
+                PlayerPrefs.SetString("inventory2", "");
                 break;
         }
     }
@@ -429,30 +449,40 @@ public class HotBar : MonoBehaviour
                 inventory3 = false;
                 inventorycounter -= 1;
                 Instantiate(Lantern, player.position, player.rotation);
+                inventoryitem3 = "";
+                PlayerPrefs.SetString("inventory3", "");
                 break;
             case "bandage":
                 bandage2.SetActive(false);
                 inventory3 = false;
                 inventorycounter -= 1;
                 Instantiate(Bandage, player.position, player.rotation);
+                inventoryitem3 = "";
+                PlayerPrefs.SetString("inventory3", "");
                 break;
             case "keycard":
                 keycard2.SetActive(false);
                 inventory3 = false;
                 inventorycounter -= 1;
                 Instantiate(Keycard, player.position, player.rotation);
+                inventoryitem3 = "";
+                PlayerPrefs.SetString("inventory3", "");
                 break;
             case "crowbar":
                 crowbar2.SetActive(false);
                 inventory3 = false;
                 inventorycounter -= 1;
                 Instantiate(Crowbar, player.position, player.rotation);
+                inventoryitem3 = "";
+                PlayerPrefs.SetString("inventory3", "");
                 break;
             case "metalpipe":
                 metalpipe2.SetActive(false);
                 inventory3 = false;
                 inventorycounter -= 1;
                 Instantiate(Crowbar, player.position, player.rotation);
+                inventoryitem3 = "";
+                PlayerPrefs.SetString("inventory3", "");
                 break;
         }
     }
@@ -465,30 +495,40 @@ public class HotBar : MonoBehaviour
                 inventory4 = false;
                 inventorycounter -= 1;
                 Instantiate(Lantern, player.position, player.rotation);
+                inventoryitem4 = "";
+                PlayerPrefs.SetString("inventory4", "");
                 break;
             case "bandage":
                 bandage3.SetActive(false);
                 inventory4 = false;
                 inventorycounter -= 1;
                 Instantiate(Bandage, player.position, player.rotation);
+                inventoryitem4 = "";
+                PlayerPrefs.SetString("inventory4", "");
                 break;
             case "keycard":
                 keycard3.SetActive(false);
                 inventory4 = false;
                 inventorycounter -= 1;
                 Instantiate(Keycard, player.position, player.rotation);
+                inventoryitem4 = "";
+                PlayerPrefs.SetString("inventory4", "");
                 break;
             case "crowbar":
                 crowbar3.SetActive(false);
                 inventory4 = false;
                 inventorycounter -= 1;
                 Instantiate(Crowbar, player.position, player.rotation);
+                inventoryitem4 = "";
+                PlayerPrefs.SetString("inventory4", "");
                 break;
             case "metalpipe":
                 metalpipe3.SetActive(false);
                 inventory4 = false;
                 inventorycounter -= 1;
                 Instantiate(Crowbar, player.position, player.rotation);
+                inventoryitem4 = "";
+                PlayerPrefs.SetString("inventory4", "");
                 break;
         }
     }
@@ -521,6 +561,7 @@ public class HotBar : MonoBehaviour
             PlayerHP.health = 6;
         }
     }
+    
 }
 
 
