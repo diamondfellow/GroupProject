@@ -19,15 +19,18 @@ public class Guards : MonoBehaviour
             isTalking = true;
             name1.text = "Guard:";
 
-            int num = Random.Range(0, 2);
-            if (num == 0)
+
+            if (isTalking = true && Sylvia.LeaveTown == false)
             {
                 diolouge.text = "Hey, Mavis was looking for you.";
+
+                canvas.SetActive(true);
             }
-            canvas.SetActive(true);
-            if (num == 1)
+
+            else if (isTalking = true && Sylvia.LeaveTown == true)
             {
-                diolouge.text = "Hey, Mavis was looking for you.";
+                diolouge.text = "You should see the doctor before you leave";
+                canvas.SetActive(true);
             }
         }
 
