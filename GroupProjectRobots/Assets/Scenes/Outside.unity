@@ -466,6 +466,7 @@ GameObject:
   - component: {fileID: 96803231}
   - component: {fileID: 96803230}
   - component: {fileID: 96803229}
+  - component: {fileID: 96803232}
   m_Layer: 0
   m_Name: Spooky Scary Factory (Unblocked)
   m_TagString: Untagged
@@ -580,6 +581,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &96803232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96803228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f45fef20ee1724687260f3410bdfc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diolouge: {fileID: 887522042}
+  name1: {fileID: 1226285740}
+  isTalking: 0
+  canvas: {fileID: 874221065}
+  test: 0
 --- !u!1 &148114824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,7 +1018,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175296756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 98.86, y: 12.46, z: -1421.8551}
+  m_LocalPosition: {x: 98.86, y: 12.46, z: -1}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9615,7 +9633,7 @@ RectTransform:
   - {fileID: 887522041}
   - {fileID: 1226285739}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -42070,7 +42088,7 @@ PrefabInstance:
     - target: {fileID: 5956437568208520420, guid: 1e46a089332b33741b98390920349d1f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5956437568208520420, guid: 1e46a089332b33741b98390920349d1f,
         type: 3}
@@ -42434,5 +42452,10 @@ PrefabInstance:
       propertyPath: hotbar
       value: 
       objectReference: {fileID: 728599774}
+    - target: {fileID: 269987893724553473, guid: 8217de63bed5cba40bf8525a5a86cca4,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8217de63bed5cba40bf8525a5a86cca4, type: 3}
