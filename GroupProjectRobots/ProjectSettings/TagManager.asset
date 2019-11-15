@@ -21,6 +21,7 @@ TagManager:
   - crowbar
   - keycard
   - Credits
+  - Jenkins
   layers:
   - Default
   - TransparentFX

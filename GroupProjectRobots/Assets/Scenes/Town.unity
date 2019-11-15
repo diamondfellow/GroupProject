@@ -10144,7 +10144,7 @@ GameObject:
   - component: {fileID: 652107944}
   m_Layer: 10
   m_Name: old man jenkins
-  m_TagString: enemy
+  m_TagString: Jenkins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10915,7 +10915,6 @@ GameObject:
   - component: {fileID: 800337093}
   - component: {fileID: 800337092}
   - component: {fileID: 800337091}
-  - component: {fileID: 800337097}
   - component: {fileID: 800337096}
   - component: {fileID: 800337099}
   - component: {fileID: 800337098}
@@ -10923,6 +10922,8 @@ GameObject:
   - component: {fileID: 800337101}
   - component: {fileID: 800337095}
   - component: {fileID: 800337102}
+  - component: {fileID: 800337097}
+  - component: {fileID: 800337103}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -11068,7 +11069,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 800337090}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: deb723ef11a6a2843968bf7d223f0d32, type: 3}
+  m_Script: {fileID: 11500000, guid: 811dad1915740ac4ca578b283a011f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &800337098
@@ -11143,6 +11144,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diolouge: {fileID: 872816065}
   canvas: {fileID: 1508723304}
+--- !u!114 &800337103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800337090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb723ef11a6a2843968bf7d223f0d32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &851862002
 GameObject:
   m_ObjectHideFlags: 0
@@ -11300,7 +11313,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 865490105}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
