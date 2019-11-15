@@ -9,6 +9,7 @@ public class PlayerPickup : MonoBehaviour
     public static bool hasMetalPipe = false;
     public static bool hasRobotArm = false;
     public static bool hasKeycard = false;
+    public static bool hasLantern = false;
     // Start is called before the first frame update
     void Start()
     {

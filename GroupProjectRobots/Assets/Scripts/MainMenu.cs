@@ -7,6 +7,14 @@ public class MainMenu : MonoBehaviour
     public void Play()
     {
         SceneManager.LoadScene("Name");
+        PlayerPrefs.SetString("inventory1", "");
+        PlayerPrefs.SetString("inventory2", "");
+
+        PlayerPrefs.SetString("inventory3", "");
+
+        PlayerPrefs.SetString("inventory4", "");
+        PlayerPrefs.SetString("Playername", "No Name");
+
     }
     public void SaveName()
     {

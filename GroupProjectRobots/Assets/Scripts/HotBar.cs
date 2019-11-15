@@ -143,17 +143,17 @@ public class HotBar : MonoBehaviour
         {
             inventoryfull = false;
         }
-        if (lanternIsOn)
+        if (!lanternIsOn)
         {
             dark.SetActive(false);
             superdark.SetActive(true);
-            lanternIsOn = false;
+            
         }
         else
         {
             superdark.SetActive(false);
             dark.SetActive(true);
-            lanternIsOn = true;
+            
         }
     }
     public void  LanternPickup()
