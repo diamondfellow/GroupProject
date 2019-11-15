@@ -375,12 +375,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_Font: {fileID: 12800000, guid: bd7e2eb23de23d1449e3e1c52372b4b2, type: 3}
+    m_FontSize: 72
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 50
+    m_MaxSize: 80
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -11201,12 +11201,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: bd7e2eb23de23d1449e3e1c52372b4b2, type: 3}
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 55
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -11300,7 +11300,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 865490105}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -11570,12 +11570,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: bd7e2eb23de23d1449e3e1c52372b4b2, type: 3}
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 55
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -12558,12 +12558,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: bd7e2eb23de23d1449e3e1c52372b4b2, type: 3}
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 55
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -20859,6 +20859,135 @@ PrefabInstance:
       propertyPath: m_Name
       value: HotBarCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: keycard
+      value: 
+      objectReference: {fileID: 1945056409}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: crowbar
+      value: 
+      objectReference: {fileID: 1945056405}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: bandage
+      value: 
+      objectReference: {fileID: 1945056413}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: lantern
+      value: 
+      objectReference: {fileID: 1945056417}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: lantern2
+      value: 
+      objectReference: {fileID: 1945056415}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: lantern1
+      value: 
+      objectReference: {fileID: 1945056416}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: lantern3
+      value: 
+      objectReference: {fileID: 1945056414}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: bandage1
+      value: 
+      objectReference: {fileID: 1945056412}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: bandage2
+      value: 
+      objectReference: {fileID: 1945056411}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: bandage3
+      value: 
+      objectReference: {fileID: 1945056410}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: keycard1
+      value: 
+      objectReference: {fileID: 1945056408}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: keycard2
+      value: 
+      objectReference: {fileID: 1945056407}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: keycard3
+      value: 
+      objectReference: {fileID: 1945056406}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: crowbar1
+      value: 
+      objectReference: {fileID: 1945056404}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: crowbar2
+      value: 
+      objectReference: {fileID: 1945056403}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: crowbar3
+      value: 
+      objectReference: {fileID: 1945056402}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: Bandage
+      value: 
+      objectReference: {fileID: 2749324600067781265, guid: f6bb64006d943764eba9ac330333051f,
+        type: 3}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: Crowbar
+      value: 
+      objectReference: {fileID: 7064069148916384242, guid: 9c8c023b42ea5bc49a3ad93be8456fb8,
+        type: 3}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: Lantern
+      value: 
+      objectReference: {fileID: 9026510529237991865, guid: cd1e8c3f101852e4083327aed9038fc6,
+        type: 3}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: Keycard
+      value: 
+      objectReference: {fileID: 8659676067068026716, guid: 30085b94d405fad44b5622c3167f08ca,
+        type: 3}
+    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 800337094}
+    - target: {fileID: 5956437566852939161, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956437568117254605, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956437567734855872, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956437566790838591, guid: 1e46a089332b33741b98390920349d1f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5956437568208520420, guid: 1e46a089332b33741b98390920349d1f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21024,135 +21153,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5956437566790838591, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5956437566852939161, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5956437567734855872, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5956437568117254605, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: keycard
-      value: 
-      objectReference: {fileID: 1945056409}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: crowbar
-      value: 
-      objectReference: {fileID: 1945056405}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: bandage
-      value: 
-      objectReference: {fileID: 1945056413}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: lantern
-      value: 
-      objectReference: {fileID: 1945056417}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: lantern2
-      value: 
-      objectReference: {fileID: 1945056415}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: lantern1
-      value: 
-      objectReference: {fileID: 1945056416}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: lantern3
-      value: 
-      objectReference: {fileID: 1945056414}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: bandage1
-      value: 
-      objectReference: {fileID: 1945056412}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: bandage2
-      value: 
-      objectReference: {fileID: 1945056411}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: bandage3
-      value: 
-      objectReference: {fileID: 1945056410}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: keycard1
-      value: 
-      objectReference: {fileID: 1945056408}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: keycard2
-      value: 
-      objectReference: {fileID: 1945056407}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: keycard3
-      value: 
-      objectReference: {fileID: 1945056406}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: crowbar1
-      value: 
-      objectReference: {fileID: 1945056404}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: crowbar2
-      value: 
-      objectReference: {fileID: 1945056403}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: crowbar3
-      value: 
-      objectReference: {fileID: 1945056402}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: Bandage
-      value: 
-      objectReference: {fileID: 2749324600067781265, guid: f6bb64006d943764eba9ac330333051f,
-        type: 3}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: Crowbar
-      value: 
-      objectReference: {fileID: 7064069148916384242, guid: 9c8c023b42ea5bc49a3ad93be8456fb8,
-        type: 3}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: Lantern
-      value: 
-      objectReference: {fileID: 9026510529237991865, guid: cd1e8c3f101852e4083327aed9038fc6,
-        type: 3}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: Keycard
-      value: 
-      objectReference: {fileID: 8659676067068026716, guid: 30085b94d405fad44b5622c3167f08ca,
-        type: 3}
-    - target: {fileID: 5956437568679684542, guid: 1e46a089332b33741b98390920349d1f,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 800337094}
     - target: {fileID: 5956437566773100245, guid: 1e46a089332b33741b98390920349d1f,
         type: 3}
       propertyPath: m_Sprite
