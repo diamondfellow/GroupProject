@@ -14,7 +14,7 @@ public class ComputerAnimator : MonoBehaviour
     void Update()
     {
         GetComponent<Animator>().SetBool("WakeUp", BBEGFightDialogue.awake);
-        GetComponent<Animator>().SetBool("Friendly", BBEGFightDialogue.speak2);
+        GetComponent<Animator>().SetBool("Friendly", BBEGFightDialogue.speak3);
         GetComponent<Animator>().SetBool("Realization", BBEGFightDialogue.speak4);
         GetComponent<Animator>().SetBool("Angry",BBEGFightDialogue.speak5);
         GetComponent<Animator>().SetBool("AngrySpeak",BBEGFightDialogue.speak6);
