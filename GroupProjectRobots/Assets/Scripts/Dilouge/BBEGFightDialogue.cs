@@ -7,18 +7,19 @@ public class BBEGFightDialogue : MonoBehaviour
 {
     public Text compName;
     public Text Speaking;
-    static bool speak1 = true;
-    bool speak2 = false;
-    bool speak3 = false;
-    static bool speak4 = false;
-    bool speak5 = false;
-    static bool speak6 = false;
-    bool speak7 = false;
-    bool speak8 = false;
-    static bool speak9 = false;
+    public static bool awake = false;
+    public static bool speak1 = true;
+    public static bool speak2 = false;
+    public static bool speak3 = false;
+    public static bool speak4 = false;
+    public static bool speak5 = false;
+    public static bool speak6 = false;
+    public static bool speak7 = false;
+    public static bool speak8 = false;
+    public static bool speak9 = false;
     public GameObject canvas;
     public bool isTalking = false;
-    static bool battleStart = false;
+    public static bool battleStart = false;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,7 @@ public class BBEGFightDialogue : MonoBehaviour
         if (speak1)
         {
             Speaking.text = "... Hello?";
+            awake = true;
             speak1 = false;
             speak2 = true;
         }
@@ -45,6 +47,7 @@ public class BBEGFightDialogue : MonoBehaviour
             isTalking = true;
             if (speak2)
             {
+                awake = false;
                 isTalking = true;
                 Speaking.text = "My name is Amarum. It’s been so long since I’ve had friends. Are we... Are we friends?";
                 speak2 = false;
