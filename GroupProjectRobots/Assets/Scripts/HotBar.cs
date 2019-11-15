@@ -43,6 +43,9 @@ public class HotBar : MonoBehaviour
     public GameObject Bandage;
     public GameObject Crowbar;
     public GameObject Lantern;
+    public GameObject dark;
+    public GameObject superdark;
+    public bool lanternIsOn = false;
 
 
 
@@ -139,6 +142,18 @@ public class HotBar : MonoBehaviour
         else
         {
             inventoryfull = false;
+        }
+        if (lanternIsOn)
+        {
+            dark.SetActive(false);
+            superdark.SetActive(true);
+            lanternIsOn = false;
+        }
+        else
+        {
+            superdark.SetActive(false);
+            dark.SetActive(true);
+            lanternIsOn = true;
         }
     }
     public void  LanternPickup()
@@ -358,6 +373,7 @@ public class HotBar : MonoBehaviour
                 Instantiate(Lantern, player.position, player.rotation);
                 inventoryitem1 = "";
                 PlayerPrefs.SetString("inventory1", "");
+                lanternIsOn = false;
                 break;
             case "bandage":
                 bandage.SetActive(false);
@@ -405,6 +421,7 @@ public class HotBar : MonoBehaviour
                 Instantiate(Lantern, player.position, player.rotation);
                 inventoryitem2 = "";
                 PlayerPrefs.SetString("inventory2", "");
+                lanternIsOn = false;
                 break;
             case "bandage":
                 bandage1.SetActive(false);
@@ -451,6 +468,7 @@ public class HotBar : MonoBehaviour
                 Instantiate(Lantern, player.position, player.rotation);
                 inventoryitem3 = "";
                 PlayerPrefs.SetString("inventory3", "");
+                lanternIsOn = false;
                 break;
             case "bandage":
                 bandage2.SetActive(false);
@@ -497,6 +515,7 @@ public class HotBar : MonoBehaviour
                 Instantiate(Lantern, player.position, player.rotation);
                 inventoryitem4 = "";
                 PlayerPrefs.SetString("inventory4", "");
+                lanternIsOn = false;
                 break;
             case "bandage":
                 bandage3.SetActive(false);
@@ -537,13 +556,31 @@ public class HotBar : MonoBehaviour
         if (inventoryitem1 == "bandage")
         {
             PlayerHP.health = 6;
-        } 
+            PlayerPrefs.SetString("inventory1", "");
+            inventoryitem1 = "";
+            inventorycounter -= 1;
+            inventory1 = false;
+            bandage.SetActive(false);
+        }
+        if (inventoryitem1 == "lantern")
+        {
+            lanternIsOn = !lanternIsOn;
+        }
     }
     public void UseItem2()
     {
         if (inventoryitem2 == "bandage")
         {
             PlayerHP.health = 6;
+            PlayerPrefs.SetString("inventory2", "");
+            inventoryitem2 = "";
+            inventorycounter -= 1;
+            inventory2 = false;
+            bandage1.SetActive(false);
+        }
+        if (inventoryitem2 == "lantern")
+        {
+            lanternIsOn = !lanternIsOn;
         }
     }
     public void UseItem3()
@@ -551,6 +588,15 @@ public class HotBar : MonoBehaviour
         if (inventoryitem3 == "bandage")
         {
             PlayerHP.health = 6;
+            PlayerPrefs.SetString("inventory3", "");
+            inventoryitem3 = "";
+            inventorycounter -= 1;
+            inventory3 = false;
+            bandage2.SetActive(false);
+        }
+        if (inventoryitem3 == "lantern")
+        {
+            lanternIsOn = !lanternIsOn;
         }
 
     }
@@ -559,8 +605,18 @@ public class HotBar : MonoBehaviour
         if (inventoryitem4 == "bandage")
         {
             PlayerHP.health = 6;
+            PlayerPrefs.SetString("inventory4", "");
+            inventoryitem4 = "";
+            inventorycounter -= 1;
+            inventory4 = false;
+            bandage3.SetActive(false);
+        }
+        if (inventoryitem4 == "lantern")
+        {
+            lanternIsOn = !lanternIsOn;
         }
     }
+
     
 }
 
