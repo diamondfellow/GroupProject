@@ -27,6 +27,7 @@ public class PlayerPickup : MonoBehaviour
         {
             Destroy(collision.gameObject);
             hotbar.LanternPickup();
+            hasLantern = true;
         }
         if (collision.gameObject.tag == "crowbar" && Input.GetKeyDown(KeyCode.E))
         {

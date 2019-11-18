@@ -374,6 +374,7 @@ public class HotBar : MonoBehaviour
                 inventoryitem1 = "";
                 PlayerPrefs.SetString("inventory1", "");
                 lanternIsOn = false;
+                PlayerPickup.hasLantern = false;
                 break;
             case "bandage":
                 bandage.SetActive(false);
@@ -390,6 +391,7 @@ public class HotBar : MonoBehaviour
                 Instantiate(Keycard, player.position, player.rotation);
                 inventoryitem2 = "";
                 PlayerPrefs.SetString("inventory1", "");
+                PlayerPickup.hasKeycard = false;
                 break;
             case "crowbar":
                 crowbar.SetActive(false);
@@ -398,6 +400,7 @@ public class HotBar : MonoBehaviour
                 Instantiate(Crowbar, player.position, player.rotation);
                 inventoryitem2 = "";
                 PlayerPrefs.SetString("inventory1", "");
+                PlayerPickup.hasCrowbar = false;
                 break;
             case "metalpipe":
                 metalpipe.SetActive(false);
@@ -422,6 +425,7 @@ public class HotBar : MonoBehaviour
                 inventoryitem2 = "";
                 PlayerPrefs.SetString("inventory2", "");
                 lanternIsOn = false;
+                PlayerPickup.hasLantern = false;
                 break;
             case "bandage":
                 bandage1.SetActive(false);
@@ -430,6 +434,7 @@ public class HotBar : MonoBehaviour
                 Instantiate(Bandage, player.position, player.rotation);
                 inventoryitem2 = "";
                 PlayerPrefs.SetString("inventory2", "");
+                
                 break;
             case "keycard":
                 keycard1.SetActive(false);
@@ -438,6 +443,7 @@ public class HotBar : MonoBehaviour
                 Instantiate(Keycard, player.position, player.rotation);
                 inventoryitem2 = "";
                 PlayerPrefs.SetString("inventory2", "");
+                PlayerPickup.hasKeycard = false;
                 break;
             case "crowbar":
                 crowbar1.SetActive(false);
@@ -446,6 +452,7 @@ public class HotBar : MonoBehaviour
                 Instantiate(Crowbar, player.position, player.rotation);
                 inventoryitem2 = "";
                 PlayerPrefs.SetString("inventory2", "");
+                PlayerPickup.hasCrowbar = false;
                 break;
             case "metalpipe":
                 metalpipe1.SetActive(false);
@@ -469,6 +476,7 @@ public class HotBar : MonoBehaviour
                 inventoryitem3 = "";
                 PlayerPrefs.SetString("inventory3", "");
                 lanternIsOn = false;
+                PlayerPickup.hasLantern = false;
                 break;
             case "bandage":
                 bandage2.SetActive(false);
@@ -485,6 +493,7 @@ public class HotBar : MonoBehaviour
                 Instantiate(Keycard, player.position, player.rotation);
                 inventoryitem3 = "";
                 PlayerPrefs.SetString("inventory3", "");
+                PlayerPickup.hasKeycard = false;
                 break;
             case "crowbar":
                 crowbar2.SetActive(false);
@@ -493,6 +502,7 @@ public class HotBar : MonoBehaviour
                 Instantiate(Crowbar, player.position, player.rotation);
                 inventoryitem3 = "";
                 PlayerPrefs.SetString("inventory3", "");
+                PlayerPickup.hasCrowbar = false;
                 break;
             case "metalpipe":
                 metalpipe2.SetActive(false);
@@ -516,6 +526,7 @@ public class HotBar : MonoBehaviour
                 inventoryitem4 = "";
                 PlayerPrefs.SetString("inventory4", "");
                 lanternIsOn = false;
+                PlayerPickup.hasLantern = false;
                 break;
             case "bandage":
                 bandage3.SetActive(false);
@@ -532,6 +543,7 @@ public class HotBar : MonoBehaviour
                 Instantiate(Keycard, player.position, player.rotation);
                 inventoryitem4 = "";
                 PlayerPrefs.SetString("inventory4", "");
+                PlayerPickup.hasKeycard = false;
                 break;
             case "crowbar":
                 crowbar3.SetActive(false);
@@ -540,6 +552,7 @@ public class HotBar : MonoBehaviour
                 Instantiate(Crowbar, player.position, player.rotation);
                 inventoryitem4 = "";
                 PlayerPrefs.SetString("inventory4", "");
+                PlayerPickup.hasCrowbar = false;
                 break;
             case "metalpipe":
                 metalpipe3.SetActive(false);

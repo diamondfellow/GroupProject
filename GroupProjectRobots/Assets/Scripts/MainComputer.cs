@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainComputer : MonoBehaviour
 {
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,7 @@ public class MainComputer : MonoBehaviour
     public  void OnTriggerEnter2D(Collider2D collision)
     {
         SceneManager.LoadScene("MainComputer");
-        
+
+        Destroy(GameObject.FindGameObjectWithTag("music32"));
     }
 }
