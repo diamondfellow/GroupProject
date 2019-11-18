@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destory : MonoBehaviour
+public class Fade : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,9 +13,6 @@ public class Destory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(BBEGFightDialogue.battleStart)
-        {
-            Destroy(gameObject);
-        }
+        GetComponent<Animator>().SetBool("Fade", ComputerSpeakHP.Dead);
     }
 }
