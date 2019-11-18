@@ -628,6 +628,10 @@ public class HotBar : MonoBehaviour
         {
             lanternIsOn = !lanternIsOn;
         }
+        if (inventoryitem4 == "keycard")
+        {
+            
+        }
     }
 
     

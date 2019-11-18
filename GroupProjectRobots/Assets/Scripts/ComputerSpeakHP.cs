@@ -94,4 +94,20 @@ public class ComputerSpeakHP : MonoBehaviour
         }
 
     }
+    private void Update()
+    {
+        CanvasTimer -= Time.deltaTime;
+        if (CanvasTimer <= 0)
+        {
+            canvas.SetActive(false);
+            CanvasTimer = 5.0f;
+            DisabledCanvas = true;
+        }
+        if(HP < 1)
+        {
+            BBEGFightDialogue.battleStart = false;
+            Dead = true;
+        }
+    }
+
 }

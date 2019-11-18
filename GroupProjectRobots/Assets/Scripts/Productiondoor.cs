@@ -21,7 +21,7 @@ public class Productiondoor : MonoBehaviour
        if(collision.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E) && PlayerPickup.hasKeycard)
         {
             Destroy(gameObject);
-            Destroy(scanner);
+           //Destroy(scanner);
             
         } 
     }

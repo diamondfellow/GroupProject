@@ -22,11 +22,13 @@ public class HeartController : MonoBehaviour
         {
             heart1.SetActive(true);
             heart1.GetComponent<Animator>().SetFloat("hp", 1);
+            heart2.SetActive(true);
         }
         else if (PlayerHP.health == 5)
         {
             heart1.SetActive(true);
             heart1.GetComponent<Animator>().SetFloat("hp", 0);
+            heart2.SetActive(true);
         }
         else if (PlayerHP.health == 4)
         {

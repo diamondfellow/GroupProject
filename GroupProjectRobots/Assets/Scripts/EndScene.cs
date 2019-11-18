@@ -15,13 +15,11 @@ public class EndScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(ComputerSpeakHP.Dead && timer > -1)
+        timer -= Time.deltaTime;
+        if (ComputerSpeakHP.Dead)
         {
-            timer -= Time.deltaTime;
-            if(timer <=0)
-            {
-                SceneManager.LoadScene("DeadTown");
-            }
+            SceneManager.LoadScene("DeadTown");
         }
+
     }
 }
