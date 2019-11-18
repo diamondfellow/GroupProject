@@ -58231,16 +58231,16 @@ PrefabInstance:
       propertyPath: heart3
       value: 
       objectReference: {fileID: 2098746575}
-    - target: {fileID: 269987893724553487, guid: 8217de63bed5cba40bf8525a5a86cca4,
-        type: 3}
-      propertyPath: hotbar
-      value: 
-      objectReference: {fileID: 5956437566659803522}
     - target: {fileID: 269987893724553473, guid: 8217de63bed5cba40bf8525a5a86cca4,
         type: 3}
       propertyPath: m_SortingOrder
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 269987893724553487, guid: 8217de63bed5cba40bf8525a5a86cca4,
+        type: 3}
+      propertyPath: hotbar
+      value: 
+      objectReference: {fileID: 5956437566659803522}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8217de63bed5cba40bf8525a5a86cca4, type: 3}
 --- !u!1 &2073633668
@@ -59562,7 +59562,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &5956437566996698334
 MonoBehaviour:
   m_ObjectHideFlags: 0

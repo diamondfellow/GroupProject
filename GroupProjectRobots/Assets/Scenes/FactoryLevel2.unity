@@ -12308,16 +12308,16 @@ PrefabInstance:
       propertyPath: heart3
       value: 
       objectReference: {fileID: 1732203370}
-    - target: {fileID: 269987893724553487, guid: 8217de63bed5cba40bf8525a5a86cca4,
-        type: 3}
-      propertyPath: hotbar
-      value: 
-      objectReference: {fileID: 5956437567686795765}
     - target: {fileID: 269987893724553473, guid: 8217de63bed5cba40bf8525a5a86cca4,
         type: 3}
       propertyPath: m_SortingOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 269987893724553487, guid: 8217de63bed5cba40bf8525a5a86cca4,
+        type: 3}
+      propertyPath: hotbar
+      value: 
+      objectReference: {fileID: 5956437567686795765}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8217de63bed5cba40bf8525a5a86cca4, type: 3}
 --- !u!1 &481324333
@@ -30075,7 +30075,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!223 &5956437568025169070
 Canvas:
   m_ObjectHideFlags: 0
